@@ -364,7 +364,7 @@ policy "s3-block-public-access-account-level" {
 
 policy "s3-block-public-access-bucket-level" {
     source = "./policies/s3/s3-block-public-access-bucket-level.sentinel"
-    enforcement_level = "advisory"
+    enforcement_level = "hard-mandatory"
 }
 
 policy "s3-require-ssl" {
@@ -967,7 +967,7 @@ policy "s3-bucket-block-public-read-access" {
 
 policy "s3-bucket-block-public-write-access" {
   source = "./policies/s3/s3-bucket-block-public-write-access.sentinel"
-  enforcement_level = "hard-mandatory"
+  enforcement_level = "advisory"
 }
 
 policy "s3-bucket-policy-restrict-access-to-other-accounts" {
