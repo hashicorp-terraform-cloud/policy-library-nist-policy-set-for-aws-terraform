@@ -967,7 +967,7 @@ policy "s3-bucket-block-public-read-access" {
 
 policy "s3-bucket-block-public-write-access" {
   source = "./policies/s3/s3-bucket-block-public-write-access.sentinel"
-  enforcement_level = "advisory"
+  enforcement_level = "hard-mandatory"
 }
 
 policy "s3-bucket-policy-restrict-access-to-other-accounts" {
@@ -982,7 +982,7 @@ policy "s3-bucket-should-use-cross-region-replication" {
 
 policy "s3-bucket-should-be-encrypted-at-rest" {
   source = "./policies/s3/s3-bucket-should-be-encrypted-at-rest.sentinel"
-  enforcement_level = "advisory"
+  enforcement_level = "hard-mandatory"
 }
 
 policy "s3-bucket-should-have-event-notifications-enabled" {
